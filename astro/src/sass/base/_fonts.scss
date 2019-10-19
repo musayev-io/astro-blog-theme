@@ -1,0 +1,50 @@
+/*------------------------------------------------------------------
+    Base: Fonts
+-------------------------------------------------------------------*/
+@font-face {
+    font-family: 'PT Mono';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('PT Mono'), local('PTMono-Regular'), url(https://fonts.gstatic.com/s/ptmono/v5/9oRONYoBnWILk-9AnC8zNQ.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Muli';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('Muli Regular'), local('Muli-Regular'), url(https://fonts.gstatic.com/s/muli/v11/7Auwp_0qiz-afTLGKwjUwkQ.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Muli';
+    font-weight: 600;
+    font-style: normal;
+
+    src: local('Muli SemiBold'), local('Muli-SemiBold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-ade3iOCX2yW4PMFk.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Muli';
+    font-weight: 700;
+    font-style: normal;
+
+    src: local('Muli Bold'), local('Muli-Bold'), url(https://fonts.gstatic.com/s/muli/v11/7Au_p_0qiz-adYnjOCX2yW4PMFk.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    font-weight: 400;
+    font-style: normal;
+
+    src: local('PT Serif'), local('PTSerif-Regular'), url(https://fonts.gstatic.com/s/ptserif/v9/EJRVQgYoZZY2vCFuvAFWzrm_dSb_.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'PT Serif';
+    font-weight: 700;
+    font-style: normal;
+
+    src: local('PT Serif Bold'), local('PTSerif-Bold'), url(https://fonts.gstatic.com/s/ptserif/v9/EJRSQgYoZZY2vCFuvAnt66qSVy3Vp8NA.woff) format('woff');
+}

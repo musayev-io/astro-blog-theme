@@ -1,0 +1,35 @@
+/*------------------------------------------------------------------
+    Component: Blog Title
+-------------------------------------------------------------------*/
+
+.blogtitle {
+    &:hover {
+        .blogtitle-logo {
+            transform: scale(0.9);
+        }
+    }
+}
+
+.blogtitle-logo {
+    display: block;
+    max-width: 300px;
+    max-height: 60px;
+
+    img {
+        display: block;
+        width: auto;
+        max-width: inherit;
+        max-height: inherit;
+    }
+}
+
+.blogtitle-header {
+    font-size: 26px;
+    line-height: normal;
+    margin: 0;
+    color: #1b1c1f;
+
+    a {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,10 @@
+{{! Partial: Blog Info }}
+
+<section class="bloginfo">
+    <div class="bloginfo-inner">
+        {{> blogtitle}}
+        {{#if @blog.description}}
+            <p class="bloginfo-description">{{@blog.description}}</p>
+        {{/if}}
+    </div>
+</section>

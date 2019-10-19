@@ -1,0 +1,59 @@
+/*------------------------------------------------------------------
+    Base: Default
+-------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    transition-delay: 0s;
+    transition-timing-function: ease-out;
+    transition-duration: 0.2s;
+    transition-property: text-decoration, color, background-color, border-color, transform, opacity;
+}
+
+html,
+body {
+    font-family: $font_body;
+    font-size: 18px;
+    font-weight: 400;
+    height: 100%;
+    margin: 0;
+    color: #535763;
+    background: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: underline;
+    color: currentColor;
+
+    text-decoration-color: transparent;
+
+    &:hover {
+        outline: none;
+
+        text-decoration-color: currentColor;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font_header;
+}
+
+::selection {
+    background: #e5e7e9;
+}
+
+::-moz-selection {
+    background: #e5e7e9;
+}

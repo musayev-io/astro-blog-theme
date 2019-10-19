@@ -1,0 +1,14 @@
+{{! Partial: Subscription }}
+
+<section class="subscribe">
+    <h3 class="subscribe-title">{{t "Subscribe to {blogtitle}" blogtitle=@blog.title}}</h3>
+    <p class="subscribe-description">{{t "Subscribe to our email newsletter to receive article notifications and regular updates. We don't spam and your email won't be shared with third-parties."}}</p>
+    {{
+        subscribe_form
+        form_class="subscribe-form"
+        input_class="subscribe-input"
+        button_class="subscribe-submit"
+        placeholder=(t "Email Address...")
+    }}
+    <p class="subscribe-rss">{{{t "or subscribe <a href='https://feedly.com/i/subscription/feed%2Fhttps://{url}/rss/'>via RSS</a> with Feedly!" url=@blog.url}}}</p>
+</section>

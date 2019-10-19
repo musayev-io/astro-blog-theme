@@ -1,0 +1,7 @@
+{{! Partial: Error }}
+
+<section class="error">
+    <h1 class="error-title">{{t "Error"}} {{code}}</h1>
+    <h2 class="error-subtitle">{{message}}</h2>
+    <p class="error-message">{{{t "The page you were looking for cannot be found, it may have been moved or no longer exists. Navigate back to the homepage by clicking <a href='{url}'>here</a>." url=@blog.url}}}</p>
+</section>

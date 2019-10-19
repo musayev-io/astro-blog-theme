@@ -1,0 +1,15 @@
+/*------------------------------------------------------------------
+    Layout: Post List
+-------------------------------------------------------------------*/
+
+.postlist {
+    margin: 0 auto 78px;
+
+    @media (max-width: 720px) {
+        margin: 0 auto 58px;
+    }
+
+    @media (max-width: 480px) {
+        margin: 0 auto 48px;
+    }
+}

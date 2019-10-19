@@ -1,0 +1,31 @@
+/*------------------------------------------------------------------
+
+    Theme Name: Astro
+    Description: Astro Theme for Ghost by EckoThemes.
+    Author: EckoThemes
+    Author URI: https://ecko.me/
+
+-------------------------------------------------------------------*/
+
+@import 'helpers/variables';
+
+@import 'layouts/footer';
+
+@import 'components/copyright';
+@import 'components/social';
+@import 'components/pagination';
+@import 'components/subscribe';
+@import 'components/postcomments';
+@import 'components/postnav';
+@import 'components/postfooter';
+@import 'components/postreadingtime';
+
+@import 'postcontents/inline';
+@import 'postcontents/image';
+@import 'postcontents/quote';
+@import 'postcontents/list';
+@import 'postcontents/syntax';
+@import 'postcontents/table';
+@import 'postcontents/embed';
+
+@import 'vendor/highlightjs';

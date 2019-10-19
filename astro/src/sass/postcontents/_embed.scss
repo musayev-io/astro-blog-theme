@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------
+    Post Contents: Embed
+-------------------------------------------------------------------*/
+
+.postcontents {
+    iframe,
+    twitterwidget {
+        margin: 0 auto;
+    }
+
+    .fluid-width-video-wrapper {
+        margin: 58px 0;
+
+        @media (max-width: 720px) {
+            margin: 48px 0;
+        }
+
+        @media (max-width: 480px) {
+            margin: 38px 0;
+        }
+    }
+}

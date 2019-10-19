@@ -1,0 +1,36 @@
+{{! Partial: Post List }}
+
+<article class="postitem">
+    <div class="postitem-upper">
+        <div class="postitem-category">
+            {{#primary_tag}}
+                <a href="{{url}}">{{name}}</a>
+            {{/primary_tag}}
+        </div>
+        {{#if featured}}
+            <div class="postitem-featured">
+                <span>{{t "Featured"}}</span>
+                <svg class="svg-icon svg-icon-stroke svg-icon-bookmark">
+                    <use xlink:href="{{asset "svg/icons.svg"}}#bookmark"></use>
+                </svg>
+            </div>
+        {{/if}}
+    </div>
+    <h2 class="postitem-title">
+        <a href="{{url}}">{{title}}</a>
+    </h2>
+    <div class="postmeta">
+        <span class="postmeta-intro">{{t "Posted"}}</span>
+        {{#primary_author}}
+            <span class="postmeta-author">{{t "by"}} <a href="{{url}}">{{#if profile_image}}<span class="postmeta-avatar" style="background-image: url('{{profile_image}}');"></span>{{/if}}{{name}}</a></span>
+        {{/primary_author}}
+        <span class="postmeta-published">{{t "on"}} <a href="{{url}}"><time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="MMMM Do, YYYY"}}</time></a></span>
+    </div>
+    <p class="postitem-excerpt">
+        {{#if custom_excerpt}}
+            {{excerpt}}
+        {{else}}
+            {{excerpt words="45"}}...
+        {{/if}}
+    </p>
+</article>

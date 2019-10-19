@@ -1,0 +1,17 @@
+/*------------------------------------------------------------------
+    Vendor: Browser
+-------------------------------------------------------------------*/
+
+// Microsoft Edge
+@supports (-ms-ime-align:auto) {
+    * {
+        text-decoration: none !important;
+    }
+}
+
+// IE 10 & 11
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    * {
+        text-decoration: none !important;
+    }
+}

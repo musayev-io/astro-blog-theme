@@ -1,0 +1,88 @@
+/*------------------------------------------------------------------
+    Component: Pagination
+-------------------------------------------------------------------*/
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    padding: 58px 0;
+    border-top: 1px solid #e8e8ef;
+
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 720px) {
+        padding: 38px 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 28px 0;
+    }
+}
+
+.pagination-link {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 20px 0;
+    text-decoration: none;
+    color: #232526;
+
+    svg {
+        vertical-align: -6px;
+        color: #e8e8ef;
+    }
+
+    &__disabled {
+        pointer-events: none;
+        opacity: 0.1;
+
+        svg {
+            color: #232526;
+        }
+    }
+
+    &:hover {
+        svg {
+            color: $accent_color;
+        }
+    }
+
+    @media (max-width: 720px) {
+        font-size: 16px;
+    }
+
+    @media (max-width: 480px) {
+        span {
+            display: none;
+        }
+
+        svg {
+            color: #232526;
+        }
+    }
+}
+
+.pagination-older {
+    padding-left: 20px;
+
+    svg {
+        margin-left: 18px;
+    }
+}
+
+.pagination-newer {
+    padding-right: 20px;
+
+    svg {
+        margin-right: 18px;
+    }
+}
+
+.pagination-page {
+    font-size: 16px;
+    color: #aaafb4;
+
+    @media (max-width: 720px) {
+        font-size: 14px;
+    }
+}

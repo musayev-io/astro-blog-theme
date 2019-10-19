@@ -1,0 +1,41 @@
+/*------------------------------------------------------------------
+    Component: Copyright
+-------------------------------------------------------------------*/
+
+.copyright {
+    font-size: 15px;
+    line-height: 32px;
+
+    a {
+        text-decoration: none;
+    }
+
+    @media (max-width: 820px) {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    @media (max-width: 720px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+.copyright-disclaimer {
+    color: #a8aab4;
+}
+
+.copyright-ghost {
+    color: #c0c4d7;
+}
+
+.copyright-bullet {
+    font-size: 12px;
+    display: inline-block;
+    margin: 0 3px;
+    vertical-align: 2px;
+}

@@ -1,0 +1,17 @@
+{{! Partial: Pagination }}
+
+<nav class="pagination" role="navigation">
+    <a class="pagination-link {{^if prev}}pagination-link__disabled{{/if}} pagination-newer" href="{{page_url prev}}">
+        <svg class="svg-icon svg-icon-stroke svg-icon-corner-down-left">
+            <use xlink:href="{{asset "svg/icons.svg"}}#corner-down-left"></use>
+        </svg>
+        <span>{{t "Newer Posts"}}</span>
+    </a>
+    <span class="pagination-page">{{page}} / {{pages}}</span>
+    <a class="pagination-link {{^if next}}pagination-link__disabled{{/if}} pagination-older" href="{{page_url next}}">
+        <span>{{t "Older Posts"}}</span>
+        <svg class="svg-icon svg-icon-stroke svg-icon-corner-down-right">
+            <use xlink:href="{{asset "svg/icons.svg"}}#corner-down-right"></use>
+        </svg>
+    </a>
+</nav>

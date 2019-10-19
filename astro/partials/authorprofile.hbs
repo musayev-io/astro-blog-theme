@@ -1,0 +1,44 @@
+{{! Partial: Author Profile }}
+
+<section class="authorprofile {{#is "post, page"}}authorprofile__post{{/is}}">
+    {{#if profile_image}}
+        <div class="authorprofile-avatar" style="background-image: url('{{profile_image}}');" ></div>
+    {{/if}}
+    <div class="authorprofile-info">
+        <div class="authorprofile-title">{{t "Author"}}</div>
+        {{#is "author"}}
+            <h1 class="authorprofile-name"><a href="{{url}}">{{name}}</a></h1>
+        {{else}}
+            <h3 class="authorprofile-name"><a href="{{url}}">{{name}}</a></h3>
+        {{/is}}
+        <div class="authorprofile-url"><a href="{{website}}">{{website}}</a></div>
+        <p class="authorprofile-bio">{{bio}}</p>
+        <ul class="authorprofile-social">
+            {{#if twitter}}
+                <li class="authorprofile-social-item authorprofile-social-twitter">
+                    <a href="{{twitter_url}}" target="_blank">
+                        <svg class="svg-icon svg-icon-fill svg-icon-twitter">
+                            <use xlink:href="{{asset "svg/icons.svg"}}#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            {{/if}}
+            {{#if facebook}}
+                <li class="authorprofile-social-item authorprofile-social-facebook">
+                    <a href="{{facebook_url}}" target="_blank">
+                        <svg class="svg-icon svg-icon-fill svg-icon-twitter">
+                            <use xlink:href="{{asset "svg/icons.svg"}}#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+            {{/if}}
+            <li class="authorprofile-social-item authorprofile-social-rss">
+                <a href="{{url}}rss/" target="_blank">
+                    <svg class="svg-icon svg-icon-fill svg-icon-rss">
+                        <use xlink:href="{{asset "svg/icons.svg"}}#rss"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>

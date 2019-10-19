@@ -1,0 +1,81 @@
+/*------------------------------------------------------------------
+    Component: Archive
+-------------------------------------------------------------------*/
+
+.archive {
+    position: relative;
+    margin: 0 0 68px 0;
+    padding: 0 0 68px 0;
+
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 44%;
+        height: 1px;
+        content: '';
+        background-color: #e8e8ef;
+    }
+
+    @media (max-width: 720px) {
+        margin: 0 0 48px 0;
+        padding: 0 0 48px 0;
+    }
+
+    @media (max-width: 480px) {
+        margin: 0 0 38px 0;
+        padding: 0 0 38px 0;
+    }
+}
+
+.archive-type {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 18px;
+    color: #c4c8d2;
+
+    @media (max-width: 720px) {
+        margin: 0 0 17px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 18px;
+        margin: 0 0 15px;
+    }
+}
+
+.archive-title {
+    font-family: $font_body;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 0;
+    color: #014fb0;
+
+    @media (max-width: 720px) {
+        font-size: 28px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 24px;
+    }
+}
+
+.archive-description {
+    font-size: 18px;
+    line-height: 42px;
+    max-width: 640px;
+    margin: 28px 0 0;
+    color: #535763;
+
+    @media (max-width: 720px) {
+        font-size: 17px;
+        line-height: 34px;
+        margin: 22px 0 0;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 16px;
+        line-height: 32px;
+        margin: 20px 0 0;
+    }
+}

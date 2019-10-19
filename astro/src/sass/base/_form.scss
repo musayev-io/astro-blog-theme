@@ -1,0 +1,50 @@
+/*------------------------------------------------------------------
+    Base: Form
+-------------------------------------------------------------------*/
+
+form {
+    width: 100%;
+}
+
+input {
+    font-size: 16px;
+    width: 100%;
+    padding: 24px 27px;
+    color: #535763;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+
+    &:-webkit-autofill {
+        -webkit-animation-name: autofill;
+        -webkit-animation-fill-mode: both;
+    }
+
+    &:focus,
+    &:focus:hover {
+        border-color: $accent_color;
+        outline: none;
+    }
+
+    &:hover {
+        border-color: #c3c1c7;
+    }
+}
+
+input[type=text],
+input[type=email] {
+    appearance: none;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 27px;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    background-color: $accent_color;
+
+    &:focus {
+        outline: none;
+    }
+}

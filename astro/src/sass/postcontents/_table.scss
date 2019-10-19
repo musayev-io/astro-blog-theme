@@ -1,0 +1,118 @@
+/*------------------------------------------------------------------
+    Post Contents: Table
+-------------------------------------------------------------------*/
+
+.postcontents {
+    table {
+        font-family: $font_body;
+        font-size: 15px;
+        font-weight: 600;
+        position: relative;
+        width: 120%;
+        max-width: 120%;
+        height: auto;
+        margin: 50px 0;
+        margin-right: -10%;
+        margin-left: -10%;
+        border-collapse: collapse;
+        border-radius: 2px;
+
+        @media (max-width: 1060px) {
+            width: 100%;
+            margin: 40px 0;
+        }
+
+        @media (max-width: 720px) {
+            left: 0;
+            width: 100%;
+            margin: 40px 0;
+        }
+
+        @media (max-width: 460px) {
+            margin: 35px 0;
+        }
+    }
+
+    @media (max-width: 680px) {
+        table {
+            border: 0;
+        }
+
+        table caption {
+            font-size: 13px;
+        }
+
+        table thead {
+            position: absolute;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            border: none;
+        }
+
+        table tr {
+            display: block;
+            height: auto;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #ddd;
+
+            td:first-child {
+                padding: 7px 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        table td {
+            font-size: 15px;
+            display: block;
+            padding: 10px 0;
+            text-align: right;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table td:before {
+            font-weight: 700;
+            float: left;
+            content: attr(data-label);
+        }
+
+        table td:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    tr {
+        height: 75px;
+
+        & > td:first-child,
+        & > th:first-child {
+            padding-left: 30px;
+        }
+    }
+
+    th {
+        font-size: 15px;
+        font-weight: 600;
+        color: #171718;
+        background: #f4f5f9;
+    }
+
+    td,
+    th {
+        padding: 8px;
+        text-align: left;
+    }
+
+    td {
+        font-size: 15px;
+        font-weight: 400;
+        color: #464646;
+        border-bottom: 2px solid #fafafb;
+    }
+}

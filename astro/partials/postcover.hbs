@@ -1,0 +1,25 @@
+{{! Partial: Post Cover }}
+
+<section class="postcover {{#is "page"}}postcover__short{{/is}}">
+
+    <div class="postcover-background" style="background-image: url('{{img_url feature_image}}');"></div>
+
+    <div class="wrapper">
+
+        {{#is "post"}}
+            {{> postinfo}}
+        {{/is}}
+
+        {{> postheader}}
+
+    </div>
+
+    {{#is "post"}}
+        <div class="postcover-arrow">
+            <svg class="svg-icon svg-icon-stroke svg-icon-arrow-down">
+                <use xlink:href="{{asset "svg/icons.svg"}}#arrow-down"></use>
+            </svg>
+        </div>
+    {{/is}}
+
+</section>

@@ -1,0 +1,21 @@
+{{! Partial: Navigation }}
+
+{{#if navigation}}
+    <section class="navigation">
+
+        <div class="navigation-button">
+            <div class="navigation-icon"></div>
+        </div>
+
+        <nav class="navigation-main">
+            <ul class="navigation-list">
+                {{#foreach navigation}}
+                    <li class="navigation-item navigation-item-{{slug}} {{#if current}}navigation-item__current{{/if}}">
+                        <a href="{{url absolute="true"}}">{{label}}</a>
+                    </li>
+                {{/foreach}}
+            </ul>
+        </nav>
+
+    </section>
+{{/if}}

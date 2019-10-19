@@ -1,0 +1,19 @@
+{{! Partial: Post Header }}
+
+<section class="postheader">
+    {{#is "post"}}
+        {{#primary_tag}}
+            <div class="postheader-category"><a href="{{url}}">{{name}}</a></div>
+        {{/primary_tag}}
+    {{/is}}
+    <h1 class="postheader-title">{{title}}</h1>
+    {{#is "post"}}
+        <div class="postmeta">
+            <span class="postmeta-intro">{{t "Posted"}}</span>
+            {{#primary_author}}
+                <span class="postmeta-author">{{t "by"}} <a href="{{url}}">{{#if profile_image}}<span class="postmeta-avatar" style="background-image: url('{{profile_image}}');"></span>{{/if}}{{name}}</a></span>
+            {{/primary_author}}
+            <span class="postmeta-published">{{t "on"}} <a href="{{url}}"><time datetime="{{date format="YYYY-MM-DD"}}">{{date published_at format="MMMM Do, YYYY"}}</time></a></span>
+        </div>
+    {{/is}}
+</section>

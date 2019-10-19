@@ -1,0 +1,42 @@
+{{! Partial: Post Info }}
+
+{{#primary_author}}
+    {{#if bio}}
+        <section class="postinfo">
+            <div class="postinfo-inner">
+                {{#if profile_image}}
+                    <div class="postinfo-avatar" style="background-image: url('{{profile_image}}');"></div>
+                {{/if}}
+                <div class="postinfo-name"><a href="{{url}}">{{name}}</a></div>
+                <div class="postinfo-bio">{{bio}}</div>
+                <ul class="postinfo-social">
+                    {{#if twitter}}
+                        <li class="postinfo-social-item postinfo-social-twitter">
+                            <a href="{{twitter_url}}" target="_blank">
+                                <svg class="svg-icon svg-icon-fill svg-icon-twitter">
+                                    <use xlink:href="{{asset "svg/icons.svg"}}#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    {{/if}}
+                    {{#if facebook}}
+                    <li class="postinfo-social-item">
+                        <a href="{{facebook_url}}" target="_blank">
+                            <svg class="svg-icon svg-icon-fill svg-icon-facebook">
+                                <use xlink:href="{{asset "svg/icons.svg"}}#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    {{/if}}
+                    <li class="postinfo-social-item">
+                        <a href="{{url}}rss/" target="_blank">
+                            <svg class="svg-icon svg-icon-fill svg-icon-rss">
+                                <use xlink:href="{{asset "svg/icons.svg"}}#rss"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    {{/if}}
+{{/primary_author}}

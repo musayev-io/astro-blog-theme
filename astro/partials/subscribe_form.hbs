@@ -1,0 +1,14 @@
+{{! Partial: Subscribe - Form }}
+
+<form method="post" action="{{action}}" class="{{form_class}}">
+    {{hidden}}
+    <div class="form-group{{#if error}} error{{/if}}">
+        {{input_email class=input_class placeholder=placeholder value=email autofocus=autofocus}}
+    </div>
+    <button class="{{button_class}}" type="submit" data-success-input="{{t "Thanks for subscribing..."}}">
+        <svg class="svg-icon svg-icon-stroke svg-icon-arrow-right-circle">
+            <use xlink:href="{{asset "svg/icons.svg"}}#arrow-right-circle"></use>
+        </svg>
+    </button>
+    {{script}}
+</form>

@@ -1,0 +1,38 @@
+{{! Partial: Social Blog }}
+
+<section class="social">
+    {{#if @blog.twitter}}
+        <a class="social-item social-twitter" href="{{twitter_url}}" target="_blank" title="Twitter">
+            <svg class="svg-icon svg-icon-fill svg-icon-twitter">
+                <use xlink:href="{{asset "svg/icons.svg"}}#twitter"></use>
+            </svg>
+        </a>
+    {{/if}}
+    {{#if @blog.facebook}}
+        <a class="social-item social-facebook" href="{{facebook_url}}" target="_blank" title="Facebook">
+            <svg class="svg-icon svg-icon-fill svg-icon-facebook">
+                <use xlink:href="{{asset "svg/icons.svg"}}#facebook"></use>
+            </svg>
+        </a>
+    {{/if}}
+    <a class="social-item social-instagram" href="#" target="_blank" title="Instagram">
+        <svg class="svg-icon svg-icon-fill svg-icon-instagram">
+            <use xlink:href="{{asset "svg/icons.svg"}}#instagram"></use>
+        </svg>
+    </a>
+    <a class="social-item social-github" href="#" target="_blank" title="Github">
+        <svg class="svg-icon svg-icon-fill svg-icon-github">
+            <use xlink:href="{{asset "svg/icons.svg"}}#github"></use>
+        </svg>
+    </a>
+    <a class="social-item social-linkedin" href="#" target="_blank" title="LinkedIn">
+        <svg class="svg-icon svg-icon-fill svg-icon-linkedin">
+            <use xlink:href="{{asset "svg/icons.svg"}}#linkedin"></use>
+        </svg>
+    </a>
+    <a class="social-item social-rss" href="{{@blog.url}}/rss/" target="_blank" title="RSS">
+        <svg class="svg-icon svg-icon-fill svg-icon-rss">
+            <use xlink:href="{{asset "svg/icons.svg"}}#rss"></use>
+        </svg>
+    </a>
+</section>

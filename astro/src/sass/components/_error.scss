@@ -1,0 +1,51 @@
+/*------------------------------------------------------------------
+    Component: Error
+-------------------------------------------------------------------*/
+
+.error {
+    max-width: 490px;
+    margin: 0 auto 68px;
+    text-align: center;
+
+    @media (max-width: 720px) {
+        margin: 0 auto 58px;
+    }
+
+    @media (max-width: 480px) {
+        margin: 0 auto 48px;
+    }
+}
+
+.error-title {
+    font-size: 53px;
+    margin: 0 0 24px;
+    color: #1b1c1f;
+
+    @media (max-width: 720px) {
+        font-size: 43px;
+        margin: 0 0 20px;
+    }
+}
+
+.error-subtitle {
+    font-family: $font_body;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 38px;
+    text-transform: capitalize;
+    color: #868588;
+
+    @media (max-width: 720px) {
+        font-size: 20px;
+        margin: 0 0 30px;
+    }
+}
+
+.error-message {
+    line-height: 34px;
+
+    @media (max-width: 720px) {
+        font-size: 17px;
+        line-height: 30px;
+    }
+}

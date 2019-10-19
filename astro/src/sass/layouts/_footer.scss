@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------
+    Layout: Footer
+-------------------------------------------------------------------*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+
+    justify-content: space-between;
+
+    @media (max-width: 920px) {
+        width: 90%;
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 80px 0;
+    }
+
+    @media (max-width: 820px) {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    @media (max-width: 720px) {
+        padding: 60px 5%;
+    }
+}

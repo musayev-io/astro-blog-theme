@@ -1,0 +1,46 @@
+{{! Template: Post }}
+{{!< default}}
+
+{{#post}}
+
+    <main class="page">
+
+        {{> postreadingtime}}
+
+        <article class="post {{#if feature_image}}post-featured{{/if}}">
+
+            {{#if feature_image}}
+                {{> postcover}}
+            {{/if}}
+
+            {{> postflow}}
+
+            <div class="wrapper">
+
+                {{^if feature_image}}
+                    {{> postheader}}
+                {{/if}}
+
+                {{> postmain}}
+
+            </div>
+
+        </article>
+
+        <div class="wrapper">
+
+            {{> postfooter}}
+
+            {{#primary_author}}
+                {{> authorprofile}}
+            {{/primary_author}}
+
+            {{> postcomments}}
+
+            {{> postnav}}
+
+        </div>
+
+    </main>
+
+{{/post}}

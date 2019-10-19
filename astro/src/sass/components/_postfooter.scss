@@ -1,0 +1,228 @@
+/*------------------------------------------------------------------
+    Component: Post Footer
+-------------------------------------------------------------------*/
+
+.postfooter {
+    padding: 0 0 68px;
+    border-bottom: 1px solid #e8e8ef;
+
+    & > *:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 720px) {
+        padding: 0 0 58px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 0 48px;
+    }
+}
+
+.postshare {
+    display: flex;
+    flex-direction: row;
+    margin: -15px 0 68px;
+    padding: 0;
+
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @media (max-width: 720px) {
+        margin-bottom: 58px;
+
+        justify-content: center;
+    }
+
+    @media (max-width: 480px) {
+        margin-bottom: 48px;
+    }
+}
+
+.postshare-item {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    margin: 15px 32px 0 0;
+    list-style: none;
+    color: #303236;
+
+    svg {
+        width: 22px;
+        height: 18px;
+        margin-right: 8px;
+        vertical-align: -3px;
+        color: #ccd1d9;
+    }
+
+    svg.svg-icon-stroke {
+        width: 25px;
+        height: 21px;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
+
+    @media (max-width: 880px) {
+        font-size: 14px;
+        margin: 15px 20px 0 0;
+
+        svg {
+            width: 19px;
+            height: 15px;
+            margin-right: 4px;
+        }
+    }
+}
+
+.postshare-item-twitter {
+    color: $twitter_color;
+
+    a:hover {
+        svg {
+            color: $twitter_color;
+        }
+    }
+}
+
+.postshare-item-tooltip {
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    top: -52px;
+    left: -9px;
+    width: 140px;
+    padding: 8px 15px;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+    color: #fff;
+    color: #3c3b42;
+    border-radius: 3px;
+    background: #f7f5fb;
+}
+
+.postshare-item-facebook {
+    color: $facebook_color;
+
+    a:hover {
+        svg {
+            color: $facebook_color;
+        }
+    }
+}
+
+.postshare-item-google {
+    color: $google_color;
+
+    a:hover {
+        svg {
+            color: $google_color;
+        }
+    }
+}
+
+.postshare-item-email {
+    color: #82b541;
+
+    a:hover {
+        svg {
+            color: #82b541;
+        }
+    }
+}
+
+.postshare-item-permalink {
+    color: #303236;
+
+    a:hover {
+        svg {
+            color: #303236;
+        }
+    }
+}
+
+.postshare-title {
+    font-size: 17px;
+    margin-right: 26px;
+
+    @media (max-width: 720px) {
+        width: 100%;
+        margin: 0 22px 14px 0;
+        text-align: center;
+    }
+}
+
+.posttags {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: -15px 0 68px;
+    padding: 0;
+    color: #fff;
+
+    flex-wrap: wrap;
+
+    @media (max-width: 720px) {
+        font-size: 12px;
+
+        justify-content: center;
+    }
+}
+
+.posttags-item {
+    display: block;
+    margin: 15px 15px 0 0;
+
+    a {
+        display: block;
+        padding: 13px 26px;
+        text-decoration: none;
+        color: #373839;
+        border-radius: 40px;
+        background: #f4f6f8;
+
+        &:hover {
+            background: #eceff3;
+        }
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media (max-width: 720px) {
+        margin-right: 10px;
+
+        a {
+            padding: 11px 22px;
+        }
+    }
+}
+
+.posttags-item:first-child {
+    a {
+        color: #fff;
+        background: $accent_color;
+
+        &:hover {
+            background: $accent_color_dark;
+        }
+    }
+}
+
+.postauthors {
+    font-size: 17px;
+    color: #9da0a7;
+
+    a {
+        &:hover {
+            text-decoration-color: #eee;
+        }
+    }
+}

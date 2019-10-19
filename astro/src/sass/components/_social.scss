@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------
+    Component: Social Blog
+-------------------------------------------------------------------*/
+
+.social {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    @media (max-width: 820px) {
+        align-self: center;
+    }
+}
+
+.social-item {
+    display: block;
+    margin-right: 15px;
+    padding: 5px;
+    color: #ccd1d9;
+
+    svg {
+        height: 20px;
+    }
+
+    &:hover {
+        svg {
+            color: $accent_color;
+        }
+    }
+
+    &:last-child {
+        margin-right: 0;
+        padding-right: 0;
+    }
+}
+
+.social-instagram,
+.social-github,
+.social-linkedin {
+    display: none;
+}

@@ -1,0 +1,52 @@
+/*------------------------------------------------------------------
+    Layout: Header
+-------------------------------------------------------------------*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    &__overlay {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .navigation-button {
+            .navigation-icon__active:after {
+                background: #fff;
+            }
+
+            .navigation-icon__active:before {
+                background: #fff;
+            }
+
+            &:hover {
+                .navigation-icon,
+                .navigation-icon:after,
+                .navigation-icon:before {
+                    background: #fff;
+                }
+
+                .navigation-icon__active {
+                    background: transparent;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 920px) {
+        width: 100%;
+        margin: 0 auto;
+        padding: 80px 7.5%;
+    }
+
+    @media (max-width: 720px) {
+        padding: 60px 7.5%;
+    }
+}

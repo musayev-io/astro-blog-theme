@@ -1,0 +1,58 @@
+/*------------------------------------------------------------------
+    Component: Post Comments
+-------------------------------------------------------------------*/
+
+.postcomments {
+    display: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid #e8e8ef;
+
+    &__open {
+        cursor: inital;
+    }
+}
+
+.postcomments-view {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 68px 0;
+    text-align: center;
+    color: #18191c;
+
+    svg {
+        width: 34px;
+        height: 34px;
+        margin-right: 20px;
+        vertical-align: -11px;
+        color: #c2c2cc;
+    }
+
+    &:hover {
+        svg {
+            color: $accent_color;
+        }
+    }
+
+    @media (max-width: 720px) {
+        padding: 58px 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 48px 0;
+    }
+}
+
+.postcomments-disqus {
+    display: none;
+    padding: 68px 0;
+
+    @media (max-width: 720px) {
+        padding: 58px 0;
+    }
+
+    @media (max-width: 480px) {
+        padding: 48px 0;
+    }
+}
